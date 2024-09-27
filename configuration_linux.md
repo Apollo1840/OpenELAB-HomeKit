@@ -24,11 +24,16 @@ Then finish the installation.
 
 ### Step 2: Burn MicroPython Firmware to ESP32 to Enable Python on ESP32
 
-We are going to use **Thonny** as the Python editor.  
-Thonny is directly executable as a `.exe` file within the folder, so we do not need to do anything here.
+Run command: 
 
-    # Action: Navigate to: ./OpenELAB_HomeKit_Tutorial/Python/firmware/Thonny
-    # Action: Double-click: Thonny.exe
+```bash
+
+    sudo apt update
+    sudo apt install thonny
+```
+
+
+    # Action: Open: Thonny
 
 In the menu bar, you will see the `Run` panel.
 
