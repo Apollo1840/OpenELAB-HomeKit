@@ -1,34 +1,20 @@
-# Configuration on PC
+# Configuration on MacOS (un-tested)
 
 ### Step 1: Update the Driver to Communicate with the ESP32 Board
 
-    # Action: Plug-in: PC --(USB-Type C Cable)-- ESP32 Board
-    # Action: Press: Win button on your PC
-    # Action: Type: 'device'
+    # Action: Navigate.to: ./OpenELAB_HomeKit_Tutorial/Python/firmware/CH34x_Install_V1.5.pkg
+    # Action: Double-click: CH34x_Install_V1.5.pkg
 
-You will see a `Device Manager` pop-up.
-
-    # Action: Click: Device Manager
-
-You will see a list of devices, find something like `***(COM & ***)`.
-
-    # Action: Click: the ">" button before '***(COM & ***)'
-    # Action: Right-click: USB-SERIAL CH340 (COM*)
-    # Action: Click: Update driver
-    # Action: Click: Browse ***
-    # Action: Click: Browse
-    # Action: Navigate to: ./OpenELAB_HomeKit_Tutorial/Python/firmware/usb_ch341_3.1.2009.06
-    # Action: Click: Next
-
-Then finish the installation.
+Then follow the instructions to finish the installation.
 
 ### Step 2: Burn MicroPython Firmware to ESP32 to Enable Python on ESP32
 
-We are going to use **Thonny** as the Python editor.  
-Thonny is directly executable as a `.exe` file within the folder, so we do not need to do anything here.
+    # Actions: Download Thonny from: https://github.com/thonny/thonny/releases/download/v4.1.6/thonny-4.1.6.pkg
+    # Action: Double-click: Downloads/CH34x_Install_V1.5.pkg
 
-    # Action: Navigate to: ./OpenELAB_HomeKit_Tutorial/Python/firmware/Thonny
-    # Action: Double-click: Thonny.exe
+Then follow the instructions to finish the installation.
+
+    # Action: Open the Thonny App.    
 
 In the menu bar, you will see the `Run` panel.
 
@@ -50,3 +36,32 @@ You will see a menu button to the left of the `Install` button.
 Now you are done. It is highly recommended to open the file views.
 
     # Action: Click: (Menu) View > Files
+
+
+## Step 3: Upload some libraries to the ESP32
+
+Keep Thonny open, if not run command:
+
+```bash
+    thonny
+```
+
+In the file panel, navigate local folder to `./OpenELAB_HomeKit_Tutorial/Python/Courses/Prerequisites`
+
+    # Action: Right-click: i2c_lcd.py
+    # Action: Click: /upload_to
+
+    # Action: Right-click: lcd_api.py
+    # Action: Click: /upload_to
+    
+as shown:
+
+![UploadTo](./images/upload_to.jpg)
+
+## Step 4: Test code
+
+    # Action: Plug-in: ESP32: PIN(12) --(Wire)-- LED
+
+In the file panel, navigate local folder to `./OpenELAB_HomeKit_Tutorial/Python/Courses/Prerequisites`
+
+Run `breathing_led.py`.

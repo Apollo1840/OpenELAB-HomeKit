@@ -1,4 +1,4 @@
-# Configuration on PC
+# Configuration on Windows PC
 
 ### Step 1: Update the Driver to Communicate with the ESP32 Board
 
@@ -50,3 +50,34 @@ You will see a menu button to the left of the `Install` button.
 Now you are done. It is highly recommended to open the file views.
 
     # Action: Click: (Menu) View > Files
+
+
+
+## Step 3: Upload some libraries to the ESP32
+
+Keep Thonny open, if not run command:
+
+```bash
+    thonny
+```
+
+In the file panel, navigate local folder to `./OpenELAB_HomeKit_Tutorial/Python/Courses/Prerequisites`
+
+    # Action: Right-click: i2c_lcd.py
+    # Action: Click: /upload_to
+
+    # Action: Right-click: lcd_api.py
+    # Action: Click: /upload_to
+    
+as shown:
+
+![UploadTo](./images/upload_to.jpg)
+
+## Step 4: Test code
+
+    # Action: Plug-in: ESP32: PIN(12) --(Wire)-- LED
+
+In the file panel, navigate local folder to `./OpenELAB_HomeKit_Tutorial/Python/Courses/Prerequisites`
+
+Run `breathing_led.py`.
+
