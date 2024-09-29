@@ -68,6 +68,9 @@ In the file panel, navigate local folder to `./OpenELAB_HomeKit_Tutorial/Python/
 
     # Action: Right-click: lcd_api.py
     # Action: Click: /upload_to
+
+    # Action: Right-click: io_map.py
+    # Action: Click: /upload_to
     
 as shown:
 

@@ -8,7 +8,7 @@ IOMap = {
     "PIR": 13,
     "buzzer": 12,
     "servo_m": 14,
-    "servo_n": 27,
+    "servo_f": 27,
     "steam_sensor": 35,
     "humid_temp_sensor": 17,
     "fan_": 25,

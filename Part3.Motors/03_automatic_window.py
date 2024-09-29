@@ -8,7 +8,7 @@ STATE2DUTY_WINDOW = {
 }
 THRESHOLD_WET = 8100
 
-pwm = PWM(Pin(IOMap["servo_n"]))
+pwm = PWM(Pin(IOMap["servo_f"]))
 pwm.freq(50)
 
 # set ADC to 0-3.3V

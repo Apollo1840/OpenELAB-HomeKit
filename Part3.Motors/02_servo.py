@@ -2,7 +2,7 @@ from machine import Pin, pwm_window
 import time
 from io_map import IOMap
 
-pwm_window = pwm_window(Pin(IOMap["servo_n"]))  # window
+pwm_window = pwm_window(Pin(IOMap["servo_f"]))  # window
 pwm_door = pwm_window(Pin(IOMap["servo_m"]))  # door
 pwm_window.freq(50)
 pwm_door.freq(50)

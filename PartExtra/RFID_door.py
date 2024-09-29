@@ -8,7 +8,7 @@ from io_map import IOMap
 
 PASSKEY = 656
 
-pwm = PWM(Pin(IOMap["servo_n"]))
+pwm = PWM(Pin(IOMap["servo_m"]))
 pwm.freq(50)
 
 button1 = Pin(IOMap["button_right"], Pin.IN, Pin.PULL_UP)

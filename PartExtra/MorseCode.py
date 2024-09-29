@@ -13,7 +13,7 @@ lcd = I2cLcd(i2c, IOMap["LCD"], 2, 16)
 button1 = Pin(IOMap["button_right"], Pin.IN, Pin.PULL_UP)
 button2 = Pin(IOMap["button_left"], Pin.IN, Pin.PULL_UP)
 
-pwm = PWM(Pin(IOMap["button_right"]))
+pwm = PWM(Pin(IOMap["servo_m"]))
 pwm.freq(50)
 
 time_pressing = 0
