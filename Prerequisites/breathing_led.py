@@ -12,4 +12,5 @@ while True:
     for i in range(1023, 0, -1):
         pwm_led_y.duty(i)
         time.sleep_ms(1)
+    time.sleep_ms(200)
     pwm_led_y.deinit()
