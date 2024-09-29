@@ -62,7 +62,7 @@ as shown:
 
 ## Step 4: Test code
 
-    # Action: Plug-in: ESP32: PIN(12) --(Wire)-- LED
+    # Action: Plug-in: ESP32: PIN(18) --(Wire)-- LED
 
 In the file panel, navigate local folder to `./OpenELAB_HomeKit_Tutorial/Python/Courses/Prerequisites`
 
